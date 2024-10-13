@@ -1,0 +1,118 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-position: center;
+    background-size: coverS;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/*overlay*/
+body::before
+{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.DivPrincipal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.CajasdeRegistro
+{
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2
+{
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.Cajas{
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.Cajas input
+{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+
+
+}
+
+
+
+
+.boton
+{
+    background: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.links a
+
+{
+    display: block;
+    color:black;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" /><circle cx="12" cy="12" r="3" /></svg>') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.eye-icon:hover {
+    opacity: 0.7;
+}
